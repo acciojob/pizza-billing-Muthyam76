@@ -28,7 +28,7 @@ public class Pizza {
         extratakeaway=0;
         extratake=false;
         billcheck=false;
-        bill="Base Price Of The Pizza:"+price+"\n";
+        bill="Base Price Of The Pizza: "+price+"\n";
 
 
     }
@@ -83,12 +83,12 @@ public class Pizza {
         if(billcheck==false) {
             billcheck=true;
             if (extrachess == true)
-                bill = bill + "Extra Cheese Added:" + extrachessprice + "\n";
+                bill = bill + "Extra Cheese Added: " + extrachessprice + "\n";
             if (extratop == true)
-                bill = bill + "Extra Toppings Added:" + extratopprice + "\n";
+                bill = bill + "Extra Toppings Added: " + extratopprice + "\n";
             if (extratake == true)
-                bill = bill + "Paperbag Added:" + extratakeaway + "\n";
-            bill = bill + "Total Price:" + price + "\n";
+                bill = bill + "Paperbag Added: " + extratakeaway + "\n";
+            bill = bill + "Total Price: " + price + "\n";
             return this.bill;
 
         }
