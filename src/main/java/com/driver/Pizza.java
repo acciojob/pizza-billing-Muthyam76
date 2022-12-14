@@ -73,9 +73,10 @@ public class Pizza {
                 bill=bill+"Paperbag Added: "+bagPrice+"\n";
             }
 
-            bill=bill+"Total Price: "+price;
+            bill=bill+"Total Price: "+price+"\n";
             isBillGenerated=true;
+            return bill;
         }
-        return bill;
+        return  "";
     }
 }
