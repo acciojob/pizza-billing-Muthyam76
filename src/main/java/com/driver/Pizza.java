@@ -7,10 +7,10 @@ public class Pizza {
     private int cheesePrice;
     private int topingsPrice;
     private int bagPrice;
-    private boolean  isCheeseAdded=false;
-    private boolean isTopingsAdded=false;
-    private boolean isBillGenerated=false;
-    private boolean isBagAdded=false;
+    private boolean  isCheeseAdded;
+    private boolean isTopingsAdded;
+    private boolean isBillGenerated;
+    private boolean isBagAdded;
 
 
 
@@ -27,6 +27,10 @@ public class Pizza {
             price=400;
             topingsPrice=120;
         }
+        isCheeseAdded=false;
+        isTopingsAdded=false;
+        isBagAdded=false;
+        isBillGenerated=false;
         bill="Base Price Of The Pizza: "+price+"\n";
     }
 
@@ -37,7 +41,7 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
         if(isCheeseAdded==false){
-            price=price+cheesePrice;
+            this.price=this.price+this.cheesePrice;
             isCheeseAdded=true;
         }
 
@@ -54,7 +58,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
         if(isBagAdded==false){
-            //agit
+
             price=price+bagPrice;
             isBagAdded=true;
         }
@@ -74,7 +78,7 @@ public class Pizza {
                 bill=bill+"Paperbag Added: "+bagPrice+"\n";
             }
 
-            bill=bill+"Total Price: "+price;
+            bill=bill+"Total Price: "+price+"\n";
             isBillGenerated=true;
             return bill;
         }
