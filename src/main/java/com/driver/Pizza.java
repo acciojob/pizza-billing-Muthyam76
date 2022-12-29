@@ -83,7 +83,7 @@ public class Pizza {
             isBillGenerated=true;
             return bill;
         }
-        return  "";
+        return  bill;
     }
 
 }
