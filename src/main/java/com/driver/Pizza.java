@@ -2,7 +2,7 @@ package com.driver;
 
 public class Pizza {
     private int price;
-   // private Boolean isVeg;
+   private Boolean isVeg;
     private String bill;
     private int cheesePrice;
     private int topingsPrice;
@@ -19,6 +19,7 @@ public class Pizza {
     public Pizza(Boolean isVeg){
         cheesePrice=80;
         bagPrice=20;
+        this.isVeg=isVeg;
         if(isVeg==true){
             price=300;
             topingsPrice=70;
@@ -84,4 +85,5 @@ public class Pizza {
         }
         return  "";
     }
+
 }
