@@ -2,7 +2,7 @@ package com.driver;
 
 public class Pizza {
     private int price;
-    private Boolean isVeg;
+   // private Boolean isVeg;
     private String bill;
     private int cheesePrice;
     private int topingsPrice;
